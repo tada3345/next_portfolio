@@ -3,7 +3,28 @@ import { motion } from 'framer-motion';
 type Props = {};
 
 const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {
+      title: 'HPリニューアル作成',
+      desc: 'モダンなデザインに明るく仕上げ、デザイン変更前との比較でpV数を毎月3.5倍以上上げることに成功した',
+      link: 'https://github.com/tada3345/pastProjectsImg/blob/main/hp.png?raw=true',
+    },
+    {
+      title: '社内管理システム開発',
+      desc: 'SNSのように誰でも使いやすい社内管理システムを開発した',
+      link: 'https://github.com/tada3345/pastProjectsImg/blob/main/fms.png?raw=true',
+    },
+    {
+      title: '店内用案内ページ',
+      desc: 'ネットカフェ利用の方向けに、動画や店内サービスのご案内のほか、天気や最新ニュース等を開くたびに切り替わり表示させるページを開発した。',
+      link: 'https://github.com/tada3345/pastProjectsImg/blob/main/inshop.png?raw=true',
+    },
+    {
+      title: '販促・SEO対策用の自社コラム',
+      desc: 'SEO対策として貢献。 特に、左の女性専用サービスの特集ページでは、「女性専用　ネットカフェ　まんが喫茶」でグーグル検索すると上位3位内にリストされ来客を促した',
+      link: 'https://github.com/tada3345/pastProjectsImg/blob/main/column.png?raw=true',
+    },
+  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,21 +53,16 @@ const Projects = (props: Props) => {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src="https://github.com/tada3345/react_dev/blob/main/src/assets/img/work1.png?raw=true"
+              src={project.link}
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#f7ab0a]/50">
                   {i + 1} of {projects.length} :
                 </span>
-                社内管理システム
+                {project.title}
               </h4>
-              <p className="text-lg text-center md:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Praesentium aspernatur blanditiis consectetur assumenda commodi
-                libero facilis sunt maxime eum corrupti. Recusandae distinctio
-                voluptate vel laudantium labore dolore eaque perspiciatis omnis?
-              </p>
+              <p className="text-lg text-center md:text-left">{project.desc}</p>
             </div>
           </div>
         ))}

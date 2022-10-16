@@ -13,20 +13,17 @@ const Skills = (props: Props) => {
         カーサーをアイコンの上に動かすとレベルが表示されます。
       </h3>
       <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        <Skill lang="css" level="90" />
+        <Skill lang="html" level="90" />
+        <Skill lang="js" level="90" />
+        <Skill lang="react" level="80" />
+        <Skill lang="tailwind" level="80" />
+        <Skill lang="vs" level="90" />
+        <Skill lang="php" level="80" />
+        <Skill lang="mysql" level="80" />
+
+        <Skill lang="ts" level="50" />
+        <Skill lang="firebase" level="50" />
       </div>
     </motion.div>
   );

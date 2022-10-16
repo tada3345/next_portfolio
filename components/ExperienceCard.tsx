@@ -31,7 +31,10 @@ const ExperienceCard = (props: Props) => {
         <p className="uppercase py-5 text-gray-800">
           {props.job_start} --{props.job_end}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul
+          className="list-disc space-y-4 ml-5 text-lg relative w-full overflow-x-scroll overflow-y-hidden snap-y snap-mandatory z-20
+       scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
+        >
           {props.lis.map((li, index) => (
             <li key={index}>{li}</li>
           ))}

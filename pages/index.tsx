@@ -11,7 +11,7 @@ import ContactMe from '../components/ContactMe';
 
 const Home: NextPage = () => {
   return (
-    <div className="scroll-smooth bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
+    <div className="scroll-smooth bg-[rgb(225,138,7)] text-black h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
       <Head>
         <title>ポーフォリオ</title>
       </Head>
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://i.imgur.com/e2yvD6A.png"
+              src="https://github.com/tada3345/react_dev/blob/main/src/assets/img/yasuda.png?raw=true"
               alt=""
             />
           </div>

@@ -1,15 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+
+import Tada_img from './assets/Yasuda_400_400.jpg';
 
 type Props = {};
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      '最新技術で日本を盛り上げる',
-      'React Vue PHP MySQL Javascript HTML ...etc',
+      '実績◎スキル◎人間性◎',
+      'React PHP MySQL Javascript HTML SASS Vue GIT...etc',
+      'TOEIC910点 抜群の英語力',
       '即日就業可!',
     ],
     loop: true,
@@ -18,12 +22,15 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
-        className="relative rounded-fill h-32 w-32 mx-auto object-cover"
-        src="https://github.com/tada3345/react_dev/blob/main/src/assets/img/yasuda.png?raw=true"
+      <Image
+        width={200}
+        height={200}
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        src={Tada_img}
+        // src="https://github.com/tada3345/react_dev/blob/main/src/assets/img/yasuda.png?raw=true"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-sm uppercase text-gray-800 pb-2 tracking-[15px]">
           フロントエンジニア
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">

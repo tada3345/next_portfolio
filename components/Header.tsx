@@ -23,17 +23,27 @@ const Header = (props: Props) => {
         {/*social icons*/}
         <SocialIcon
           url="https://twitter.com/t"
-          fgColor="gray"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/"
-          fgColor="gray"
+          url="https://youtube.com/"
+          fgColor="white"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/"
-          fgColor="gray"
+          url="https://facebook.com/"
+          fgColor="white"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://linkedin.com/"
+          fgColor="white"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://instagram.com/"
+          fgColor="white"
           bgColor="transparent"
         />
       </motion.div>
@@ -56,11 +66,11 @@ const Header = (props: Props) => {
           <SocialIcon
             className="cursor-pointer"
             network="email"
-            fgColor="gray"
+            fgColor="white"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get in Touch
+          <p className="uppercase hidden md:inline-flex text-sm text-white">
+            お問い合わせ
           </p>
         </motion.div>
       </Link>

@@ -29,20 +29,20 @@ const ContactMe = (props: Props) => {
       </h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
-          高質をどうぞ。{' '}
-          <span className="decoration-[#f7ab0a]/50 underline">即日就業可</span>
+          今すぐお問い合わせください！
+          <span className="decoration-[#FFFFFF]/50 underline">即日就業可</span>
         </h4>
         <div>
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <PhoneIcon className="text-[#ffffff] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+123+456+789</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="text-[#ffffff] h-7 w-7 animate-pulse" />
             <p className="text-2xl">abc@def.com</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#f7ab0a] h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-[#ffffff] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+123+456+789</p>
           </div>
         </div>
@@ -80,7 +80,7 @@ const ContactMe = (props: Props) => {
             type="submit"
             className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
           >
-            Submit
+            送信する
           </button>
         </form>
       </div>

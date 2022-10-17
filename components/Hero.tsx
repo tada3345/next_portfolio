@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 
-import Tada_img from './assets/Yasuda_400_400.jpg';
+// import Tada_img from './assets/Yasuda_400_400.jpg';
 
 type Props = {};
 
@@ -22,11 +22,11 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
+      <img
         width={200}
         height={200}
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={Tada_img}
+        src="https://raw.githubusercontent.com/tada3345/pastProjectsImg/main/400_400.jpg"
         // src="https://github.com/tada3345/react_dev/blob/main/src/assets/img/yasuda.png?raw=true"
       />
       <div className="z-20">
